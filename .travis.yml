@@ -1,13 +1,9 @@
 language: java
-jdk: 
-  - openjdk7
-  - oraclejdk7
-
+jdk: openjdk7
 deploy:
   provider: heroku
   api_key:
-    secure: E+UTUWjOXvY+3fSPbzIG4X+/Q+jUvi5H9/1iuhOFWnYB0GXU6sVaVPZKb0qYdP0om43TT/6YLRxuJbmwZs47jPS5LhZoU2fmSy4uuYPhn7rGjJpA5Lh0J29cdb8tGqrWCrJzQOjoKyY29m8pxF7s/hF6b1U4HPRoh6z+dYU8m1E=
+    secure: WX39QvFN0gJ/YISK2lLp5JDtpBBxFDkXQxDBBo8pgt/ZTwbHTguVwlXBoIth1b5k+s2Cjk4uJ0y/UCbgXIfPMn7cHS8DW7ePA7Uk+dN1Sq0sa+GVnziO0osiYlecQtFHKSjltxlt2SUr7VdCmGVlz2FB4gOjPZENbik/Opn9rSY=
   app: helloworld-staging
   on:
     repo: hugpro/helloworld
-
