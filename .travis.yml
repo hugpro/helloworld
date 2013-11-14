@@ -1,5 +1,6 @@
 language: java
 jdk: openjdk7
+
 deploy:
   provider: heroku
   api_key:
@@ -7,3 +8,7 @@ deploy:
   app: helloworld-staging
   on:
     repo: hugpro/helloworld
+
+after_script:
+  - "bin/selenium_test_xvfb"
+  - "git push --remote production master"

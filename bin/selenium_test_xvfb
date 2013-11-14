@@ -5,7 +5,7 @@ sudo bin/xvfb start
 export DISPLAY=:99
 
 # Run tests
-export STAGING_SERVER="http://hapworldtwo.herokuapp.com/"
+export STAGING_SERVER="http://helloworld-staging.herokuapp.com/"
 mvn test-compile failsafe:integration-test
 
 # Clean up
