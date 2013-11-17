@@ -10,5 +10,6 @@ deploy:
     repo: hugpro/helloworld
 
 after_script:
+  - export STAGING_SERVER=http://helloworld-staging.herokuapp.com/
   - sh bin/selenium_test_xvfb
 
