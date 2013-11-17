@@ -12,4 +12,5 @@ deploy:
 after_script:
   - export STAGING_SERVER=http://helloworld-staging.herokuapp.com/
   - sh bin/selenium_test_xvfb
+  - echo "STAGING looks good, you should promote to PRODUCTION"
 
